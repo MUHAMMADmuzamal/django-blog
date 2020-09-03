@@ -1,0 +1,8 @@
+{
+    "python.pythonPath": "myproject\\Scripts\\python.exe",
+    "intelephense.files.associations": [
+
+        "*.php",
+        "*.phtml"
+    ]
+}
