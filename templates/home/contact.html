@@ -1,5 +1,27 @@
 {% extends 'base.html'%}
-{% block titile %} Home {% endblock titile %}
+{% block titile %} Contact {% endblock titile %}
 {%block body%}
-<h3>This is a contact</h3>
+<div class="container my-3">
+<h3>Contact iCoder Admin</h3>
+<form method="POST" action="/contact" >
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" aria-describedby="name">
+  </div>
+    <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone Number</label>
+    <input type="password" class="form-control" id="phone">
+  </div>
+    <div class="form-group">
+    <label for="content">Descirbe your isssue</label>
+    <textarea type="text" class="form-control" name="content" id="content" cols="30"  rows="5"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
 {%endblock body%}
