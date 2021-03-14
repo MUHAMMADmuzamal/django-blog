@@ -8,6 +8,6 @@ path('contact', views.contact, name='Contact'),
 path('about', views.about, name='About'),
 path('search', views.search, name='Search'),
 path('signup', views.handleSignup, name='SignUp'),
-path('login', views.handleLogin, name='SignUp'),
-path('logout', views.handleLogout, name='SignUp'),
+path('login', views.handleLogin, name='Login'),
+path('logout', views.handleLogout, name='LogOut'),
 ]
